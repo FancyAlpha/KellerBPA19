@@ -13,7 +13,7 @@
 			</td>
 			<td>
 				<h1 id = "message"><?php echo "Hello World!"; ?></h1>
-				<p class='description'></p> This is a <span class="blue">PHP Starter Application</span>.
+				<p class='description'></p> This is a <span class="blue">PHP Starter Application</span> by Cloud Foundry.
 			</td>
 		</tr>
 	</table>
