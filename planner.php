@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-<!--TODO: use config's global variables to make paths more relative -->
 <?php include 'resources/config.php'?>
 <?php include'resources/layout/head.php'?>
 
