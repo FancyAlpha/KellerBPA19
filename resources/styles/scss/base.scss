@@ -1,1 +1,6 @@
 @import 'nav','footer', 'index';
+
+::selection {
+  background: rgb(52, 58, 64);
+  color: white;
+}

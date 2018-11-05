@@ -5,4 +5,8 @@
 .header {
   height: 50vh; }
 
+::selection {
+  background: #343a40;
+  color: white; }
+
 /*# sourceMappingURL=base.css.map */

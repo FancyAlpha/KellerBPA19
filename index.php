@@ -16,6 +16,7 @@
         </div>
     </div>
 
+    <a class="twitter-timeline" data-height="1400" data-theme="dark" data-link-color="#4FABFF" href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">Tweets by National_BPA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </main>
 <?php include'resources/layout/scripts.php'?>
 <?php include'resources/layout/footer.php'?>
