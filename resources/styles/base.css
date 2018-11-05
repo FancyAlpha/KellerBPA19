@@ -1,3 +1,7 @@
+@media only screen and (max-width: 992px) {
+  nav .d-flex {
+    flex-direction: row !important; } }
+
 .header {
   height: 50vh; }
 
