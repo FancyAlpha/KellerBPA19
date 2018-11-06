@@ -9,14 +9,39 @@
 
 <main class="container">
 
-    <div class="header row justify-content-center">
-        <div class="align-self-center">
-            <h1 class="display-1" id="timer"></h1>
-            <h3 class="text-muted text-center">remaining</h3>
-        </div>
-    </div>
+    <header class="row bg-secondary">
 
-    <a class="twitter-timeline" data-height="1400" data-theme="dark" data-link-color="#4FABFF" href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">Tweets by National_BPA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="bg-dark text-white position-absolute d-md-inline-block d-none p-4">
+            <h1 class="display-4 font-weight-bold">May 5-9</h1>
+            <h2 class="font-weight-bold text-muted text-center">2020</h2>
+            <!--            <span class="display-1" id="timer"></span>-->
+            <!--            <h3 class="text-muted">remaining</h3>-->
+        </div>
+
+        <div class="col my-auto text-white text-center">
+            <h2 class="display-4">
+                Welcome to</h2>
+            <h1 class="font-weight-bold display-2">
+                Washington D.C</h1>
+            <h4 class="d-md-none display-4 pt-3">May 5-9</h4>
+        </div>
+
+
+    </header>
+
+    <div class="row">
+        <div class="col-12 col-md-6">.</div>
+
+        <div class="col">
+        <a class="twitter-timeline"
+           data-height="600"
+           data-chrome="noheader nofooter noborders transparent"
+           href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
+            Tweets by National_BPA
+        </a>
+        </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 </main>
 <?php include'resources/layout/scripts.php'?>
 <?php include'resources/layout/footer.php'?>

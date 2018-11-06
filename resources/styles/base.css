@@ -2,7 +2,7 @@
   nav .d-flex {
     flex-direction: row !important; } }
 
-.header {
+header {
   height: 50vh; }
 
 ::selection {
