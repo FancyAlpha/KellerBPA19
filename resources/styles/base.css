@@ -5,6 +5,10 @@
 header {
   height: 50vh; }
 
+.logo {
+  width: 1in;
+  height: auto; }
+
 ::selection {
   background: #343a40;
   color: white; }

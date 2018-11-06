@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEI,yCAA2C;EAD7C,WAAQ;IAEJ,cAAc,EAAE,cAAc;;ACFpC,MAAO;EACL,MAAM,EAAE,IAAI;;ACAd,WAAY;EACV,UAAU,EAAE,OAAe;EAC3B,KAAK,EAAE,KAAK",
+"mappings": "AAEI,yCAA2C;EAD7C,WAAQ;IAEJ,cAAc,EAAE,cAAc;;ACFpC,MAAO;EACL,MAAM,EAAE,IAAI;;AAGd,KAAM;EACJ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;;ACLd,WAAY;EACV,UAAU,EAAE,OAAe;EAC3B,KAAK,EAAE,KAAK",
 "sources": ["scss/_nav.scss","scss/_index.scss","scss/base.scss"],
 "names": [],
 "file": "base.css"
