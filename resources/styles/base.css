@@ -2,12 +2,14 @@
   nav .d-flex {
     flex-direction: row !important; } }
 
-header {
-  height: 50vh; }
-
 .logo {
   width: 1in;
   height: auto; }
+
+header img {
+  width: 100%;
+  height: auto;
+  min-height: 500px; }
 
 ::selection {
   background: #343a40;

@@ -1,6 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
     <div class="container d-flex flex-column">
 
+        <!-- BPA Heading -->
+        <div class="d-sm-none col-12 pb-2">
+            <h5 class="text-center"><a class="text-dark" href="bpa.org">Business Professionals of America</a></h5>
+        </div>
+
         <!-- Sandwich Icon -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -9,9 +14,16 @@
         </button>
 
         <!-- Navigation Heading -->
+
+        <!-- BPA Heading -->
+        <div class="d-none d-sm-block pb-2">
+            <h5><a class="text-dark" href="bpa.org">Business Professionals of America</a></h5>
+        </div>
+
+
         <div>
             <a href="index.php" class="navbar-brand p-3 bg-dark text-white">
-                BPA NLC 2020
+                NLC 2020
             </a> <span class="d-none d-md-inline">in Washington D.C</span>
         </div>
 
