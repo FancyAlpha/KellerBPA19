@@ -3,7 +3,7 @@
 
         <!-- BPA Heading -->
         <div class="d-sm-none col-12 pb-2">
-            <h5 class="text-center"><a class="text-dark" href="bpa.org">Business Professionals of America</a></h5>
+            <h5 class="text-center"><a class="text-dark" href="https://bpa.org">Business Professionals of America</a></h5>
         </div>
 
         <!-- Sandwich Icon -->
