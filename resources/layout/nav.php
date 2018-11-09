@@ -1,10 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
-    <div class="container d-flex flex-column">
-
-        <!-- BPA Heading -->
-        <div class="d-sm-none col-12 pb-2">
-            <h5 class="text-center"><a class="text-dark" href="https://bpa.org">Business Professionals of America</a></h5>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark pt-3">
+    <div class="container d-flex flex-column border-bottom">
 
         <!-- Sandwich Icon -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -13,22 +8,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <!-- Navigation Heading -->
 
         <!-- BPA Heading -->
-        <div class="d-none d-sm-block pb-2">
-            <h5><a class="text-dark" href="bpa.org">Business Professionals of America</a></h5>
-        </div>
-
-
         <div>
-            <a href="index.php" class="navbar-brand p-3 bg-dark text-white">
-                NLC 2020
-            </a> <span class="d-none d-md-inline">in Washington D.C</span>
+            <h3><a class="text-light" href="bpa.org">Business Professionals of America</a></h3>
         </div>
 
         <!-- Actual Navigation Links -->
-        <div class="collapse navbar-collapse pt-3" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse pb-3" id="navbarNavDropdown">
             <div class="navbar-nav">
 
                 <a class="nav-item nav-link" href="planner.php">Locations</a><span

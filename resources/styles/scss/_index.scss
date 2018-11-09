@@ -7,3 +7,22 @@ header {
     min-height: 500px;
   }
 }
+
+.front-bg-full {
+  /* The image used */
+  background: url('../assets/washington-monument.jpg') center no-repeat ;
+
+  background-size: cover;
+
+  $bk-opacity: 0.5;
+
+  .bg-gradient {
+    background: rgb(178,34,34);
+    background: linear-gradient(265deg, rgba(178,34,34,$bk-opacity) 0%, rgba(0,0,139,$bk-opacity) 100%);
+    background-opacity: 0.9
+  }
+}
+
+.display-shadow {
+  text-shadow: #22222233 2px 2px 2px;
+}
