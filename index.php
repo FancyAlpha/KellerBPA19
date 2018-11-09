@@ -25,6 +25,16 @@
 
 
 <main class="container">
+
+    <div class="row p-4">
+        <div class="col col-md-8 mx-auto text-dark">
+            <h2>Together, We Create</h2>
+            <p>
+                From May 1-5, we invite you to join us in Anaheim, California for the 2019 Business Professionals of America National Leadership Conference. Come together with thousands of students from across the country to compete, showcase business skills and develop leadership acumen in the Golden State.The National Leadership Conference is the culmination of the BPA year filled with hard work and dedication put into competitions, Torch Awards, leadership development, service and more!
+            </p>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-12 col-md-6">.</div>
 

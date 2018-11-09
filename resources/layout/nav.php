@@ -1,23 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark pt-3">
-    <div class="container d-flex flex-column border-bottom">
+<nav class="navbar navbar-expand-lg navbar-dark py-3 border-bottom">
+    <div class="container d-flex flex-column">
 
         <!-- Sandwich Icon -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <!-- Navigation Heading -->
 
         <!-- BPA Heading -->
         <div>
-            <h3><a class="text-light" href="bpa.org">Business Professionals of America</a></h3>
+            <h3><a class="text-light" href="http://www.bpa.org/">Business Professionals of America</a></h3>
         </div>
 
         <!-- Actual Navigation Links -->
-        <div class="collapse navbar-collapse pb-3" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="navbar-nav">
 
                 <a class="nav-item nav-link" href="planner.php">Locations</a><span
@@ -38,11 +37,10 @@
                 <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
 
 
-                <a class="nav-item nav-link" href="#">Events/Competitions</a><span
-                        class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Competition Info</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">About BPA</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Contact Us</a>
+                <a class="nav-item nav-link" href="#">Events/Competitions</a>   <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Competition Info</a>      <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Hello</a>                      <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">About Us</a>
             </div>
         </div>
 
