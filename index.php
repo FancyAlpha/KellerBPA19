@@ -6,25 +6,25 @@
 
 <body>
 
-<header class="front-bg-full text-white">
+<header class="front-bg-full text-white shadow-lg">
     <div class="bg-gradient">
         <?php include 'resources/layout/nav.php' ?>
 
         <div class="container text-center py-5">
-            <h1 class="display-4">
-                Welcome to</h1>
+            <h2>
+                Welcome to</h2>
             <h1 class="display-1">
                 Washington D.C</h1>
             <h2>National Leadership Conference 2020</h2>
             <h2>May 5-9</h2>
 
-            <a href="#" class="btn btn-light btn-lg mt-4">Get Started</a>
+            <a href="#" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
         </div>
     </div>
 </header>
 
 
-<main class="container">
+<main class="container pt-5">
 
     <div class="row p-4">
         <div class="col col-md-8 mx-auto text-dark">
@@ -40,8 +40,8 @@
 
         <div class="col">
             <a class="twitter-timeline"
-               data-height="600"
-               data-chrome="noheader nofooter noborders transparent"
+               data-height="400"
+               data-chrome="noheader nofooter transparent"
                href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
                 Tweets by National_BPA
             </a>

@@ -1,7 +1,14 @@
-@import 'nav','footer', 'index';
+
+$color-primary: rgb(178,34,34);
+$color-secondary: rgb(0,0,139);
+
+$enable-shadows: true;
+
+@import 'boostrap/bootstrap','nav','footer', 'index';
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Palanquin|Palanquin+Dark');
 
 ::selection {
-  background: rgb(52, 58, 64);
+  background: rgba($color-secondary, 0.8);
   color: white;
 }
 
@@ -23,7 +30,20 @@
 html,
 body {
   font-size: 14px !important;
+  font-family: 'Palanquin', sans-serif;
+  //font-family: 'Merriweather', serif;
 }
+
+h1, h2 {
+  font-family: 'Palanquin Dark', sans-serif;
+  //font-family: 'Merriweather', serif;
+  //font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Palanquin', sans-serif;
+}
+
 h1 {
   font-size: 1.602em;
 }

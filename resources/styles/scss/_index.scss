@@ -14,12 +14,11 @@ header {
 
   background-size: cover;
 
-  $bk-opacity: 0.5;
+  $bk-opacity: 0.6;
 
   .bg-gradient {
     background: rgb(178,34,34);
-    background: linear-gradient(265deg, rgba(178,34,34,$bk-opacity) 0%, rgba(0,0,139,$bk-opacity) 100%);
-    background-opacity: 0.9
+    background: linear-gradient(265deg, rgba($color-primary,$bk-opacity) 0%, rgba($color-secondary,$bk-opacity) 100%);
   }
 }
 

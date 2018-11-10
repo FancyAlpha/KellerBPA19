@@ -1,8 +1,8 @@
 footer {
-
+  background: desaturate(mix($color-secondary, $color-secondary, 50%), 70%);
 }
 
 .logo {
-  width: 1in;
+  width: 2in;
   height: auto;
 }

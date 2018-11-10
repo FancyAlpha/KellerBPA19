@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark py-3 border-bottom">
-    <div class="container d-flex flex-column">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex flex-column border-bottom py-3">
 
         <!-- Sandwich Icon -->
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
@@ -37,9 +37,10 @@
                 <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
 
 
-                <a class="nav-item nav-link" href="#">Events/Competitions</a>   <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Competition Info</a>      <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Hello</a>                      <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Events/Competitions</a> <span
+                        class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Competition Info</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">News</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">About Us</a>
             </div>
         </div>
