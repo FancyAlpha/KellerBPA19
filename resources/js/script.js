@@ -21,3 +21,9 @@
 //         document.getElementById("timer").innerHTML = "It has Started!";
 //     }
 // }, 1000);
+
+AOS.init({
+    delay: 500,
+    duration: 500,
+    anchorPlacement: 'center-bottom'
+});

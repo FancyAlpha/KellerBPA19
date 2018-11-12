@@ -1,3 +1,5 @@
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="resources/js/script.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

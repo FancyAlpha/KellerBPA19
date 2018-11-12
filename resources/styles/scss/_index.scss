@@ -10,15 +10,33 @@ header {
 
 .front-bg-full {
   /* The image used */
-  background: url('../assets/washington-monument.jpg') center no-repeat ;
-
+  background: url('../assets/washington-monument.jpg') center no-repeat;
   background-size: cover;
 
   $bk-opacity: 0.6;
 
   .bg-gradient {
-    background: rgb(178,34,34);
+    //background: $color-primary;
     background: linear-gradient(265deg, rgba($color-primary,$bk-opacity) 0%, rgba($color-secondary,$bk-opacity) 100%);
+    background-size: 150% 150%;
+
+    animation: AnimationName 10s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+    }
+    @-moz-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+    }
+    @keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+    }
   }
 }
 

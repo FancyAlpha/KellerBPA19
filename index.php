@@ -5,12 +5,11 @@
 <?php include 'resources/layout/head.php' ?>
 
 <body>
-
 <header class="front-bg-full text-white shadow-lg">
-    <div class="bg-gradient">
+    <div class="bg-gradient pb-5">
         <?php include 'resources/layout/nav.php' ?>
 
-        <div class="container text-center py-5">
+        <div class="container text-center py-5 mt-5" data-aos="fade-down">
             <h2>
                 Welcome to</h2>
             <h1 class="display-1">
@@ -26,7 +25,7 @@
 
 <main class="container pt-5">
 
-    <div class="row p-4">
+    <div class="row p-4" data-aos="fade-up">
         <div class="col col-md-8 mx-auto text-dark">
             <h2>Together, We Create</h2>
             <p>
