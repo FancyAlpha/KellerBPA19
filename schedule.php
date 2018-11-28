@@ -1,4 +1,19 @@
 <!doctype html>
+<style>
+a:link, a:visited {
+    background-color: #31315a;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+</style>
 <html>
 <?php include 'resources/config.php'?>
 <?php include'resources/layout/head.php'?>
@@ -7,10 +22,12 @@
 <?php include'resources/layout/nav.php'?>
 
 <?php
-    $csvfile = "resources/data/s.csv";
-    $htmlfile = "resources/data/last.html";
-    $thisfile = "schedule.php";
+    $csvday1 = "resources/data/1.csv";
+    $csvday2 = "resources/data/2.csv";
+    $csvday3 = "resources/data/3.csv";
 
+    $arrayindexes = array("Event" => 0, "Time" => 1);
+    
     function fileToString($filename)
     {
         $file = fopen($filename, "r") or die("Unable to open file!");
@@ -20,29 +37,6 @@
         return $filedata;
     }
 
-    function fileFromString($filename, $data)
-    {
-        $file = fopen($filename, "w") or die("Unable to open file!");
-        fwrite($file,$data);
-        fclose($file);
-        
-        return $filedata;
-    }
-
-    function checkHash($filename)
-    {
-        $currenthash = hash_file("sha256", $filename , true);
-        $lasthash = fileToString($filename . ".sha256");
-
-        return $currenthash == $lasthash;
-    }
-
-    function writeHash($filename)
-    {
-        $currenthash = hash_file("sha256", $filename, true);
-        fileFromString($filename . ".sha256", $currenthash);
-    }
-
     function cleanInput($string)
     {
         return str_replace("\r", "", $string);
@@ -50,7 +44,7 @@
 
     function csvToArray($filename)
     {
-        $filedata = fileToString("resources/data/s.csv");
+        $filedata = fileToString($filename);
         $filedata = cleanInput($filedata);
 
         $filepieces = explode("\n", $filedata);
@@ -64,181 +58,34 @@
 
         return $filecsv;
     }
-
-    function csvToAssociativeArray($filename)
+    
+    function eventToHTML($event, $arrayindexes)
     {
-        $filecsv = csvToArray($filename);
-        $sdata = array();
-        $datainfo = array();
-        $dataoptions = $filecsv[0];
-
-        for($i = 0; $i < count($dataoptions); $i++)
-        {
-            $datainfo[$dataoptions[$i]] = $i;
-        }
-        
-        //creates associateive array
-        for($j = 1; $j < count($filecsv); $j++)
-        {
-           $eventname = $filecsv[$j][$datainfo["Event"]];
-           $temparray = array();
-
-           for($k = 1; $k < count($dataoptions); $k++)
-            {
-                $temparray[$dataoptions[$k]] = $filecsv[$j][$k];
-            }
-
-            $sdata[$eventname] = $temparray;
-        }
-
-        return $sdata;
+        return "<h2 style=\"text-align: center;\">" . $event[$arrayindexes["Event"]] . "&nbsp;|&nbsp;" . $event[$arrayindexes["Time"]] . "</h2>";
     }
 
-    function rankByDay($sdata)
-    {
-        $day1events = array();
-        $day2events = array();
-        $day3events = array();
-
-        $day1eventsranked = array();
-        $day2eventsranked = array();
-        $day3eventsranked = array();
-
-        $day1eventsrankedindex = 0;
-        $day2eventsrankedindex = 0;
-        $day3eventsrankedindex = 0;
-
-        foreach ($sdata as $key => $event) {
-            if($event["Day"] == "1")
-            {
-                $day1events[$key] = $event;
-            }
-
-            elseif($event["Day"] == "2")
-            {
-                $day2events[$key] = $event;
-            }
-
-            elseif($event["Day"] == "3")
-            {
-                $day3events[$key] = $event;
-            }
-
-        }
-        
-        while(count($day1events) != 0)
-        {
-            $lowesttime = 2500;
-            $lowesttimekey = "";
-
-            foreach ($day1events as $key => $event) {
-                if((int)($event["Hour"] . $event["Minute"]) < $lowesttime)
-                {
-                     $lowesttime = (int)($event["Hour"] . $event["Minute"]);
-                     $lowesttimekey = $key;
-                }
-            }
-
-            $day1eventsranked[$day1eventsrankedindex] = $day1events[$lowesttimekey];
-            $day1eventsranked[$day1eventsrankedindex]["Event"] = $key;
-            $day1eventsrankedindex++;
-            unset($day1events[$lowesttimekey]);
-        }
-
-        while(count($day2events) != 0)
-        {
-            $lowesttime = 2500;
-            $lowesttimekey = "";
-
-            foreach ($day2events as $key => $event) {
-                if((int)($event["Hour"] . $event["Minute"]) < $lowesttime)
-                {
-                     $lowesttime = (int)($event["Hour"] . $event["Minute"]);
-                     $lowesttimekey = $key;
-                }
-            }
-
-            $day2eventsranked[$day2eventsrankedindex] = $day2events[$lowesttimekey];
-            $day2eventsranked[$day1eventsrankedindex]["Event"] = $key;
-            $day2eventsrankedindex++;
-            unset($day2events[$lowesttimekey]);
-        }
-
-        while(count($day3events) != 0)
-        {
-            $lowesttime = 2500;
-            $lowesttimekey = "";
-
-            foreach ($day3events as $key => $event) {
-                if((int)($event["Hour"] . $event["Minute"]) < $lowesttime)
-                {
-                     $lowesttime = (int)($event["Hour"] . $event["Minute"]);
-                     $lowesttimekey = $key;
-                }
-            }
-
-            $day3eventsranked[$day3eventsrankedindex] = $day3events[$lowesttimekey];
-            $day3eventsranked[$day1eventsrankedindex]["Event"] = $key;
-            $day3eventsrankedindex++;
-            unset($day3events[$lowesttimekey]);
-        }
-
-        return array($day1eventsranked, $day2eventsranked, $day3eventsranked);
-    }
-
-    function eventToHTML($event)
-    {
-        $ampm = "AM";
-        $hour = 0;
-        if((int)$event["Hour"] > 12)
-        {
-            $hour = (int)$event["Hour"] - 12;
-            $ampm = "PM";
-        }
-        else
-        {
-            $hour = (int)$event["Hour"];
-        }
-        return $event["Event"] . " " . $hour . ":" . $event["Minute"] . " " . $ampm;
-    }
-
-    function dayToHTML($day)
+    function dayToHTML($day, $arrayindexes)
     {
         $html = "";
         foreach($day as $event)
         {
-            $html = $html . eventToHTML($event) . "<br>";
+            $html = $html . eventToHTML($event, $arrayindexes) . "<br>";
         }
         return $html;
     }
-
-    // if(checkHash($csvfile) & checkHash($htmlfile) & checkHash($thisfile))
-    // {
-    //     $html = fileToString($htmlfile);
-    // }
-    
-    // else
-    if(true)
-    {
         
-        $sdata = csvToAssociativeArray($csvfile);
-        $rankeddata = rankByDay($sdata);
+        $day1 = csvToArray($csvday1);
+        $day2 = csvToArray($csvday2);
+        $day3 = csvToArray($csvday3);
 
-        $dayselector = "
+        $dayselector = "<h1 style=\"text-align: center;\">
         <a href=\"schedule.php#dy1\">Day One</a>
         <a href=\"schedule.php#dy2\">Day Two</a>
         <a href=\"schedule.php#dy3\">Day Three</a>";
 
-        $html = $dayselector . "<br><span id=\"dy1\">Day One</span><br>" . dayToHTML($rankeddata[0])
-        . $dayselector . "<br><span id=\"dy2\">Day Two</span><br>" . dayToHTML($rankeddata[1])
-        . $dayselector . "<br><span id=\"dy3\">Day Three</span><br>" . dayToHTML($rankeddata[2]); 
-
-        fileFromString($htmlfile, $html);
-
-        writeHash($csvfile);
-        writeHash($htmlfile);
-        writeHash($thisfile);
-    }
+        $html = $dayselector . "<br><span id=\"dy1\">Day One</span><br></h1>" . dayToHTML($day1, $arrayindexes)
+        . $dayselector . "<br><span id=\"dy2\">Day Two</span><br></h1>" . dayToHTML($day2, $arrayindexes)
+        . $dayselector . "<br><span id=\"dy3\">Day Three</span><br></h1>" . dayToHTML($day3, $arrayindexes);
     echo($html);
 ?>
 <?php include'resources/layout/scripts.php'?>
