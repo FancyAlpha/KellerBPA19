@@ -1,25 +1,22 @@
 <!doctype html>
 <style>
-a:link, a:visited {
+dybtn {
     background-color: #31315a;
     color: white;
     padding: 14px 25px;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    border-radius: 12px;
-}
-
-a:hover, a:active {
-    background-color: red;
+    border-radius: 5px;
 }
 </style>
+
 <html>
 <?php include 'resources/config.php'?>
-<?php include'resources/layout/head.php'?>
+<?php include 'resources/layout/head.php'?>
 
 <body>
-<?php include'resources/layout/nav.php'?>
+<?php include 'resources/layout/nav.php'?>
 
 <?php
     $csvday1 = "resources/data/1.csv";
@@ -79,9 +76,9 @@ a:hover, a:active {
         $day3 = csvToArray($csvday3);
 
         $dayselector = "<h1 style=\"text-align: center;\">
-        <a href=\"schedule.php#dy1\">Day One</a>
-        <a href=\"schedule.php#dy2\">Day Two</a>
-        <a href=\"schedule.php#dy3\">Day Three</a>";
+        <dybtn><a href=\"schedule.php#dy1\">Day One</a></dybtn>
+        <dybtn><a href=\"schedule.php#dy2\">Day Two</a></dybtn>
+        <dybtn><a href=\"schedule.php#dy3\">Day Three</a></dybtn>";
 
         $html = $dayselector . "<br><span id=\"dy1\">Day One</span><br></h1>" . dayToHTML($day1, $arrayindexes)
         . $dayselector . "<br><span id=\"dy2\">Day Two</span><br></h1>" . dayToHTML($day2, $arrayindexes)
