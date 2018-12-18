@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <!--TODO: use config's global variables to make paths more relative -->
 <?php include 'resources/config.php' ?>
 <?php include 'resources/layout/head.php' ?>
@@ -9,7 +9,7 @@
     <div class="bg-gradient pb-5">
         <?php include 'resources/layout/nav.php' ?>
 
-        <div class="container text-center py-5" data-aos="fade-down">
+        <div class="container text-center py-5" data-aos="fade-down"  data-aos-delay="400">
             <h2>
                 Welcome to the</h2>
             <h1 class="display-2">
@@ -17,7 +17,7 @@
             <h2>Washington D.C.</h2>
             <h2>May 5-9 2020</h2>
 
-            <a href="locations.php" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
+            <a href="planner.php" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
         </div>
     </div>
 </header>

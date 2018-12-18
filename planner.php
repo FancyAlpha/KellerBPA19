@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <?php include 'resources/config.php'?>
 <?php include'resources/layout/head.php'?>
 

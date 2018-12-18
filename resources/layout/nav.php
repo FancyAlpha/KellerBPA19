@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down">
+<nav class="navbar navbar-expand-lg navbar-dark" data-aos-delay="50" data-aos="fade-down">
     <div class="container d-flex flex-column border-bottom py-3">
 
         <!-- Sandwich Icon -->
@@ -19,27 +19,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="navbar-nav">
 
-                <a class="nav-item nav-link" href="planner.php">Locations</a><span
-                        class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="schedule.php" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Schedule
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="schedule.php#dy1">Day One</a>
-                        <a class="dropdown-item" href="schedule.php#dy2">Day Two</a>
-                        <a class="dropdown-item" href="schedule.php#dy3">Day Three</a>
-                    </div>
-                </div>
-                <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-
+                <a class="nav-item nav-link" href="planner.php">Locations</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="schedule.php">Schedule</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">Events/Competitions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">Attractions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">Competition Info</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="about.php">About Us</a>
             </div>
         </div>
 
