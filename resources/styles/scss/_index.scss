@@ -1,45 +1,81 @@
 
+.index {
 
-header {
-  img {
-    width: 100%;
-    height: auto;
-    min-height: 500px;
-  }
-}
+  nav {
+    @extend .navbar-light;
 
-.front-bg-full {
-  /* The image used */
-  background: url('../assets/washington-monument.jpg') center no-repeat;
-  background-size: cover;
-
-  $bk-opacity: 0.6;
-
-  .bg-gradient {
-    //background: $color-primary;
-    background: linear-gradient(265deg, rgba($color-primary,$bk-opacity) 0%, rgba($color-secondary,$bk-opacity) 100%);
-    background-size: 150% 150%;
-
-    animation: AnimationName 10s ease infinite;
-
-    @-webkit-keyframes AnimationName {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
+    .head-link {
+      @extend .text-light;
     }
-    @-moz-keyframes AnimationName {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
+
+    a.nav-item, .nav-item a, .navbar-text {
+      @extend .text-light;
     }
-    @keyframes AnimationName {
-      0%{background-position:0% 51%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 51%}
+
+    a.dropdown-item {
+      @extend .text-dark;
     }
   }
-}
 
-.display-shadow {
-  text-shadow: #22222233 2px 2px 2px;
+  header {
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 500px;
+    }
+  }
+
+  .front-bg-full {
+    /* The image used */
+    background: url('../assets/washington-monument.jpg') center no-repeat;
+    background-size: cover;
+
+    $bk-opacity: 0.6;
+
+    .bg-gradient {
+      //background: $color-primary;
+      background: linear-gradient(265deg, rgba($color-primary, $bk-opacity) 0%, rgba($color-secondary, $bk-opacity) 100%);
+      background-size: 150% 150%;
+
+      animation: AnimationName 10s ease infinite;
+
+      @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 0 51%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0 51%
+        }
+      }
+      @-moz-keyframes AnimationName {
+        0% {
+          background-position: 0 51%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0 51%
+        }
+      }
+      @keyframes AnimationName {
+        0% {
+          background-position: 0 51%
+        }
+        50% {
+          background-position: 100% 50%
+        }
+        100% {
+          background-position: 0 51%
+        }
+      }
+    }
+  }
+
+  .display-shadow {
+    text-shadow: #22222233 2px 2px 2px;
+  }
 }

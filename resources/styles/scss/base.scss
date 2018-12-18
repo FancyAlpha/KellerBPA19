@@ -29,7 +29,7 @@ $enable-shadows: true;
 //------------------------------------------------------------//
 html,
 body {
-  font-size: 14px !important;
+  font-size: 18px !important;
   font-family: 'Palanquin', sans-serif;
   //font-family: 'Merriweather', serif;
 }
@@ -114,25 +114,9 @@ h6 {
   }
 }
 
-// Large devices (desktops, 62em and up)
-@media (min-width: 62em) {
-  html,
-  body {
-    font-size: 16px !important;
-  }
-}
-
-// Extra large devices (large desktops, 75em and up)
-@media (min-width: 75em) {
-  html,
-  body {
-    font-size: 18px !important;
-  }
-}
-
 // Pen Specific Styles
 .jumbotron {
-  font-size: 16px;
+  font-size: 18px;
   @media (min-width: 62em) {
     font-size: 20px;
   }

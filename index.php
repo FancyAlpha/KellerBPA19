@@ -4,20 +4,20 @@
 <?php include 'resources/config.php' ?>
 <?php include 'resources/layout/head.php' ?>
 
-<body>
+<body class="index">
 <header class="front-bg-full text-white shadow-lg">
     <div class="bg-gradient pb-5">
         <?php include 'resources/layout/nav.php' ?>
 
-        <div class="container text-center py-5 mt-5" data-aos="fade-down">
+        <div class="container text-center py-5" data-aos="fade-down">
             <h2>
-                Welcome to</h2>
-            <h1 class="display-1">
-                Washington D.C</h1>
-            <h2>National Leadership Conference 2020</h2>
-            <h2>May 5-9</h2>
+                Welcome to the</h2>
+            <h1 class="display-2">
+                National Leadership Conference</h1>
+            <h2>Washington D.C.</h2>
+            <h2>May 5-9 2020</h2>
 
-            <a href="#" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
+            <a href="locations.php" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
         </div>
     </div>
 </header>
@@ -37,7 +37,7 @@
     <div class="row">
         <div class="col-12 col-md-6">.</div>
 
-        <div class="col">
+        <div class="col d-none">
             <a class="twitter-timeline"
                data-height="400"
                data-chrome="noheader nofooter transparent"

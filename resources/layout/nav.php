@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down">
+<nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down">
     <div class="container d-flex flex-column border-bottom py-3">
 
         <!-- Sandwich Icon -->
@@ -12,7 +12,7 @@
 
         <!-- BPA Heading -->
         <div>
-            <h3><a class="text-light" href="http://www.bpa.org/">Business Professionals of America</a></h3>
+            <h3><a href="index.php" class="head-link font-weight-bold">Business Professionals of America</a></h3>
         </div>
 
         <!-- Actual Navigation Links -->
@@ -36,11 +36,9 @@
                 </div>
                 <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
 
-
-                <a class="nav-item nav-link" href="#">Events/Competitions</a> <span
-                        class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Events/Competitions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <a class="nav-item nav-link" href="#">Attractions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">Competition Info</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">News</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">About Us</a>
             </div>
         </div>

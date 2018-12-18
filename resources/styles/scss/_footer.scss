@@ -1,5 +1,32 @@
 footer {
-  background: desaturate(mix($color-secondary, $color-secondary, 50%), 70%);
+  background: url('../assets/pinstriped-suit.png') black;
+  .social-strip {
+    a {
+      @extend .col;
+      @extend .text-light;
+
+      transition: all 0.3s;
+
+      &.twitter:hover {
+        color: #55acee !important;
+      }
+      &.facebook:hover {
+        color:  #3b5998 !important;
+      }
+      &.linkedin:hover {
+        color: #0077b5 !important;
+      }
+      &.instagram:hover {
+        color: #517fa4 !important;
+      }
+    }
+  }
+
+  .footer-links {
+    a {
+      @extend .text-light;
+    }
+  }
 }
 
 .logo {
