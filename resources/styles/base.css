@@ -6717,13 +6717,13 @@ a.text-warning:hover, a.text-warning:focus {
 a.text-danger:hover, a.text-danger:focus {
   color: #bd2130 !important; }
 
-.text-light, footer .footer-links a, .index nav .head-link, .index nav a.nav-item, .index nav .nav-item a, .index nav .navbar-text {
+.text-light, footer .footer-links a, .index nav .head-link, .index nav .navbar-toggler i, .index nav a.nav-item, .index nav .nav-item a, .index nav .navbar-text {
   color: #f8f9fa !important; }
 
 a.text-light:hover, footer .footer-links a:hover, .index nav a.head-link:hover, .index nav a.nav-item:hover, .index nav .nav-item a:hover, .index nav a.navbar-text:hover, a.text-light:focus, footer .footer-links a:focus, .index nav a.head-link:focus, .index nav a.nav-item:focus, .index nav .nav-item a:focus, .index nav a.navbar-text:focus {
   color: #dae0e5 !important; }
 
-.text-dark, nav .nav-item, nav .head-link, nav a.dropdown-item, .index nav a.dropdown-item {
+.text-dark, nav .nav-item, nav .navbar-toggler i, nav .head-link, nav a.dropdown-item {
   color: #343a40 !important; }
 
 a.text-dark:hover, nav a.nav-item:hover, nav a.head-link:hover, nav a.dropdown-item:hover, a.text-dark:focus, nav a.nav-item:focus, nav a.head-link:focus, nav a.dropdown-item:focus {
@@ -6847,6 +6847,18 @@ footer {
 .logo {
   width: 2in;
   height: auto; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
 
 .index header img {
   width: 100%;

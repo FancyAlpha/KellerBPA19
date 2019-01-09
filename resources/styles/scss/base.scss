@@ -4,7 +4,7 @@ $color-secondary: rgb(0,0,139);
 
 $enable-shadows: true;
 
-@import 'boostrap/bootstrap','nav','footer', 'index';
+@import 'boostrap/bootstrap','nav','footer', 'pages', 'index';
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Palanquin|Palanquin+Dark');
 
 ::selection {

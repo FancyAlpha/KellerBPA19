@@ -4,16 +4,8 @@
   nav {
     @extend .navbar-light;
 
-    .head-link {
+    .head-link, .navbar-toggler i, a.nav-item, .nav-item a, .navbar-text {
       @extend .text-light;
-    }
-
-    a.nav-item, .nav-item a, .navbar-text {
-      @extend .text-light;
-    }
-
-    a.dropdown-item {
-      @extend .text-dark;
     }
   }
 

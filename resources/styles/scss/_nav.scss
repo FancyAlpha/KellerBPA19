@@ -5,15 +5,7 @@ nav {
     }
   }
 
-  .nav-item {
-    @extend .text-dark;
-  }
-
-  .head-link {
-    @extend .text-dark;
-  }
-
-  a.dropdown-item {
+  .nav-item, .navbar-toggler i, .head-link, a.dropdown-item {
     @extend .text-dark;
   }
 }

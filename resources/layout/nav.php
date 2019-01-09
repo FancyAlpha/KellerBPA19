@@ -5,7 +5,8 @@
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<!--            <span class="navbar-toggler-icon"></span>-->
+            <i class="fas fa-bars fa-lg text-light"></i>
         </button>
 
         <!-- Navigation Heading -->
@@ -22,8 +23,8 @@
                 <a class="nav-item nav-link" href="planner.php">Locations</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="schedule.php">Schedule</a><span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="#">Events/Competitions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Attractions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
-                <a class="nav-item nav-link" href="#">Competition Info</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
+                <!--<a class="nav-item nav-link" href="#">Attractions</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>-->
+                <a class="nav-item nav-link" href="#">Event Info</a> <span class="navbar-text d-none d-lg-block">&nbsp;|&nbsp;</span>
                 <a class="nav-item nav-link" href="about.php">About Us</a>
             </div>
         </div>
