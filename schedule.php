@@ -38,7 +38,7 @@
 
         $filecsv = array(array());
 
-        for($i = 0; $i < count($filepieces); $i++)
+        for($i = 1; $i < count($filepieces); $i++)
         {
             $filecsv[$i] =  explode(",", $filepieces[$i]);
         }
