@@ -3,7 +3,7 @@ footer {
   .social-strip {
     a {
       @extend .col;
-      @extend .text-light;
+      @extend .text-secondary;
 
       transition: all 0.3s;
 
@@ -11,13 +11,13 @@ footer {
         color: #55acee !important;
       }
       &.facebook:hover {
-        color:  #3b5998 !important;
+        color:  #3b5999 !important;
       }
       &.linkedin:hover {
         color: #0077b5 !important;
       }
       &.instagram:hover {
-        color: #517fa4 !important;
+        color: #e4405f !important;
       }
     }
   }
