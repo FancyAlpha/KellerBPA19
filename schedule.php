@@ -40,7 +40,7 @@
 
         for($i = 1; $i < count($filepieces); $i++)
         {
-            $filecsv[$i] =  explode(",", $filepieces[$i]);
+            $filecsv[$i - 1] =  explode(",", $filepieces[$i]);
         }
 
         return $filecsv;
