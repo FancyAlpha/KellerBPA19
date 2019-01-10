@@ -56,7 +56,8 @@
         $html = "";
         foreach($day as $event)
         {
-            $html = $html . eventToHTML($event, $arrayindexes) . "<br>";
+            if($event !== NULL){
+            $html = $html . eventToHTML($event, $arrayindexes) . "<br>";}
         }
         return $html;
     }
