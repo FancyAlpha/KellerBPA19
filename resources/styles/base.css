@@ -6860,6 +6860,9 @@ footer {
     width: 100% !important;
     height: 100% !important; }
 
+.team-members {
+  background: url("../assets/worn-dots.png"); }
+
 .index header img {
   width: 100%;
   height: auto;

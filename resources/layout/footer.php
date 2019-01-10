@@ -3,19 +3,20 @@
 
         <div class="row justify-content-center">
 
-            <div class="row col-auto pt-5">
-                <div class="col justify-content-center pb-2">
+            <div class="row col-md-auto justify-content-center">
+                <div class="col justify-content-center col-auto pt-5">
                     <a href="http://www.bpa.org/"><img class="logo" src="../../resources/assets/logo-white.gif"></a>
                 </div>
 
-                <div class="col text-light">
+                <div class="col text-light col-auto pt-5">
                     <p class="mb-2">
-                    <i class="far fa-clock"></i> <b>Timings</b><br>
-                    Monday&nbsp;-&nbsp;Friday 8am&nbsp;-&nbsp;5pm&nbsp;EST
+                        <span class="font-weight-bold"><i class="far fa-clock"></i>&nbsp;Timings</span><br>
+                        Monday&nbsp;-&nbsp;Friday<br>8am&nbsp;-&nbsp;5pm&nbsp;EST
                     </p>
                     <p class="mb-2"><i class="fas fa-phone"></i> 800-334-2007</p>
-                    <p class="mb-2"><i class="fas fa-map-marker-alt"></i> 5454&nbsp;Cleveland&nbsp;Avenue
-                    Columbus,&nbsp;OH</p>
+                    <p class="mb-2" style="white-space: nowrap"><i class="fas fa-map-marker-alt"></i>&nbsp;5454&nbsp;Cleveland&nbsp;Avenue<br>
+                        Columbus,&nbsp;OH
+                    </p>
                 </div>
             </div>
 
