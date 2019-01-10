@@ -1,1 +1,10 @@
-Event 1,12:30 AM
+Event,Start Time,End Time,Location,Description
+Contest headquarters (Hilton),12:00 PM,6:00 PM,Hilton Gunston,
+Contest headquarters (Omni),12:00 PM,6:00 PM,Omni Executive Room,
+Tour Desk,2:00 PM,10:00 PM,Hilton Concorse Foyer,
+Registration/Information/Finance Desk,3:00 PM,10:00 PM,Omni Registration Desk West,
+Registration/Information/Finance Desk,3:00 PM,10:00 PM,Hilton Concorse Foyer,
+Intern Orientation/Officer Rehearsal (Hilton),7:00 PM,7:45 PM,Hilton Fairchild,
+Intern Orientation/Officer Rehearsal (Omni),7:00 PM,7:45 PM,Omni Ambassador Room,
+Administator‘s/Proctor’s/Grader’s Orientation,7:00 PM,8:00 PM,Omni Cabinet Room,
+Host Committee Dessert Reception,8:30 PM,9:30 PM,Hilton Oak Lawn,
