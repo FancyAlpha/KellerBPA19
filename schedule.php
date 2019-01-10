@@ -13,7 +13,7 @@
     $csvday2 = "resources/data/2.csv";
     $csvday3 = "resources/data/3.csv";
 
-    $arrayindexes = array("Event" => 0, "Time" => 1);
+    $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2);
 
     function fileToString($filename)
     {
@@ -48,7 +48,7 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<button type='button' class='btn'>" . $event[$arrayindexes["Event"]] . "&nbsp;|&nbsp;" . $event[$arrayindexes["Time"]] . "</button>";
+        return "<button type='button' class='btn'>" . $event[$arrayindexes["Event"]] . "&nbsp;|&nbsp;" . $event[$arrayindexes["Start Time"]] . "-" . $event[$arrayindexes["End Time"]] . "</button>";
     }
 
     function dayToHTML($day, $arrayindexes)
