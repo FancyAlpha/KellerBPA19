@@ -9,7 +9,7 @@
 </header>
 
 <?php
-    $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2);
+    $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2, "Location" => 3);
 
     function fileToString($filename)
     {
@@ -44,22 +44,23 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td></tr>";
+        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td></tr>";
     }
 
     function dayToHTML($day, $arrayindexes, $currDay)
     {
         $html =
         "<div class='table-responsive' id='dy" . $currDay . "'>
-            <table class=\"table table-hover mt-3\">
+            <table class='table table-hover mt-3'>
                 <thead class='thead-dark'>
-                    <tr>
-                        <th>Start Time</th>
-                        <th>End Time</th>
-                        <th>Event</th>
-                    </tr>
-                </thead>
-                <tbody>";
+                <tr>
+                    <td>Start Time</td>
+                    <td>End Time</td>
+                    <td>Event</td>
+                    <td>Location</td>
+                </tr>
+            </thead>
+        <tbody>";
         foreach($day as $event)
         {
             if($event !== NULL) {
