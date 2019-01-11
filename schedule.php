@@ -47,18 +47,19 @@
         return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td></tr>";
     }
 
-    function dayToHTML($day, $arrayindexes)
+    function dayToHTML($day, $arrayindexes, $currDay)
     {
         $html =
-        "<table class=\"table\">
-            <thead>
-                <tr>
-                    <td>Start Time</td>
-                    <td>End Time</td>
-                    <td>Event</td>
-                </tr>
-            </thead>
-        <tbody>";
+        "<div class='table-responsive' id='dy" . $currDay . "'>
+            <table class=\"table table-hover mt-3\">
+                <thead class='thead-dark'>
+                    <tr>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>";
         foreach($day as $event)
         {
             if($event !== NULL) {
@@ -66,7 +67,7 @@
             }
         }
 
-        $html = $html . "</tbody></table>";
+        $html = $html . "</tbody></table></div>";
         return $html;
     }
 
@@ -81,10 +82,10 @@ $day1 = csvToArray($csvday1);
     function printSelector($currDay) {
         echo("
         <div class='row justify-content-center'>
-            <div class='col-auto btn-group'>
-                <button type='button' class='btn " . ($currDay == 1 ? 'btn-dark' : 'btn-outline-dark') . "'><a href=\"schedule.php#dy1\"><a>Day One</a></button>
-                <button type='button' class='btn " . ($currDay == 2 ? 'btn-dark' : 'btn-outline-dark') . "'><a href=\"schedule.php#dy2\"><a>Day Two</a></button>
-                <button type='button' class='btn " . ($currDay == 3 ? 'btn-dark' : 'btn-outline-dark') . "'><a href=\"schedule.php#dy3\"><a>Day Three</a></button>
+            <div class='col-auto btn-group'>                
+                <a class='btn " . ($currDay == 1 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy1\">Day One</a>                
+                <a class='btn " . ($currDay == 2 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy2\">Day Two</a>              
+                <a class='btn " . ($currDay == 3 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy3\">Day Three</a>            
             </div>
         </div>");
     }
@@ -92,13 +93,13 @@ $day1 = csvToArray($csvday1);
 <main class="container my-5">
 
     <?php printSelector(1); ?>
-    <?php echo dayToHTML($day1, $arrayindexes); ?>
+    <?php echo dayToHTML($day1, $arrayindexes, 1); ?>
 
     <?php printSelector(2); ?>
-    <?php echo dayToHTML($day2, $arrayindexes); ?>
+    <?php echo dayToHTML($day2, $arrayindexes, 2); ?>
 
     <?php printSelector(3); ?>
-    <?php echo dayToHTML($day3, $arrayindexes); ?>
+    <?php echo dayToHTML($day3, $arrayindexes, 3); ?>
 </main>
 <?php include'resources/layout/scripts.php'?>
 <?php include'resources/layout/footer.php'?>
