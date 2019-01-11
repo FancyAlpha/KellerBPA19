@@ -15,7 +15,7 @@
             <h1 class="display-2">
                 National Leadership Conference</h1>
             <h2>Washington D.C.</h2>
-            <h2>May 5-9 2020</h2>
+            <h2>May 4-8 2020</h2>
 
             <a href="planner.php" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
         </div>
@@ -27,10 +27,20 @@
 
     <div class="row p-4" data-aos="fade-up">
         <div class="col col-md-8 mx-auto text-dark">
-            <h2>Together, We Create</h2>
+            <h2 class="text-center">Together, We Create</h2>
             <p>
-                From May 1-5, we invite you to join us in Anaheim, California for the 2019 Business Professionals of America National Leadership Conference. Come together with thousands of students from across the country to compete, showcase business skills and develop leadership acumen in the Golden State.The National Leadership Conference is the culmination of the BPA year filled with hard work and dedication put into competitions, Torch Awards, leadership development, service and more!
+                This year, at our 54th annual National Leadership Conference,
+                we will make BPA history in one of the most historic cities in the nation.
+                Come together with thousands of students from across the country to compete,
+                showcase business skills and develop leadership acumen in the nation's capital.
+                The National Leadership Conference is the culmination of the BPA year filled
+                with hard work and dedication put into competitions, Torch Awards, leadership
+                development, service and more!
             </p>
+
+            <div class="text-center">
+                <a href="schedule.php" class="btn btn-outline-dark">View the schedule</a>
+            </div>
         </div>
     </div>
 

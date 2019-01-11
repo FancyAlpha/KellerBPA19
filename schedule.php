@@ -9,10 +9,6 @@
 </header>
 
 <?php
-    $csvday1 = "resources/data/1.csv";
-    $csvday2 = "resources/data/2.csv";
-    $csvday3 = "resources/data/3.csv";
-
     $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2);
 
     function fileToString($filename)
@@ -48,21 +44,37 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<button type='button' class='btn'>" . $event[$arrayindexes["Event"]] . "&nbsp;|&nbsp;" . $event[$arrayindexes["Start Time"]] . "-" . $event[$arrayindexes["End Time"]] . "</button>";
+        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td></tr>";
     }
 
     function dayToHTML($day, $arrayindexes)
     {
-        $html = "";
+        $html =
+        "<table class=\"table\">
+            <thead>
+                <tr>
+                    <td>Start Time</td>
+                    <td>End Time</td>
+                    <td>Event</td>
+                </tr>
+            </thead>
+        <tbody>";
         foreach($day as $event)
         {
-            if($event !== NULL){
-            $html = $html . eventToHTML($event, $arrayindexes) . "<br>";}
+            if($event !== NULL) {
+                $html = $html . eventToHTML($event, $arrayindexes);
+            }
         }
+
+        $html = $html . "</tbody></table>";
         return $html;
     }
 
-    $day1 = csvToArray($csvday1);
+$csvday1 = "resources/data/1.csv";
+$csvday2 = "resources/data/2.csv";
+$csvday3 = "resources/data/3.csv";
+
+$day1 = csvToArray($csvday1);
     $day2 = csvToArray($csvday2);
     $day3 = csvToArray($csvday3);
 
@@ -78,16 +90,15 @@
     }
     ?>
 <main class="container my-5">
-<?php
-    printSelector(1);
-    echo dayToHTML($day1, $arrayindexes);
 
-    printSelector(2);
-    echo dayToHTML($day2, $arrayindexes);
+    <?php printSelector(1); ?>
+    <?php echo dayToHTML($day1, $arrayindexes); ?>
 
-    printSelector(3);
-    echo dayToHTML($day3, $arrayindexes);
-?>
+    <?php printSelector(2); ?>
+    <?php echo dayToHTML($day2, $arrayindexes); ?>
+
+    <?php printSelector(3); ?>
+    <?php echo dayToHTML($day3, $arrayindexes); ?>
 </main>
 <?php include'resources/layout/scripts.php'?>
 <?php include'resources/layout/footer.php'?>
