@@ -5,7 +5,7 @@
 
             <div class="row col-md-auto justify-content-center">
                 <div class="col justify-content-center col-auto pt-5">
-                    <a href="http://www.bpa.org/"><img class="logo" src="../../resources/assets/logo-white.gif"></a>
+                    <a href="http://www.bpa.org/"><img class="logo" src="../../resources/assets/logo-white.gif" alt="BPA Logo></a>
                 </div>
 
                 <div class="col text-light col-auto pt-5">
