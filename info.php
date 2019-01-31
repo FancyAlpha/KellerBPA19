@@ -5,9 +5,7 @@
 <?php include 'resources/layout/head.php' ?>
 
 <body>
-<header class="container">
-    <?php include 'resources/layout/nav.php' ?>
-</header>
+<?php include 'resources/layout/nav.php' ?>
 
 <main class="container">
 
@@ -52,7 +50,7 @@
 
     <div class="row">
         <div class="col-sm-8 mx-auto pb-3">
-            <div class="card bg-info text-white">
+            <div class="card bg-danger text-white">
                 <div class="card-header">
                     <i class="fas fa-exclamation-triangle"></i>&nbsp;Prohibited items
                 </div>
@@ -96,7 +94,7 @@
 
     <div class="row">
         <div class="col-sm-8 mx-auto pb-3">
-            <div class="card bg-info text-white">
+            <div class="card bg-danger text-white">
                 <div class="card-header">
                     <i class="fas fa-exclamation-triangle"></i>&nbsp;Prohibited items
                 </div>

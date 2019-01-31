@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" data-aos-delay="50" data-aos="fade-down">
+<nav class="navbar navbar-expand-lg navbar-dark pb-0" data-aos-delay="50" data-aos="fade-down">
     <div class="container d-flex flex-column border-bottom py-3">
 
         <!-- Sandwich Icon -->

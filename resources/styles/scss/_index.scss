@@ -2,11 +2,7 @@
 .index {
 
   nav {
-    @extend .navbar-light;
-
-    .head-link, .navbar-toggler i, a.nav-item, .nav-item a, .navbar-text {
-      @extend .text-light;
-    }
+    background: none;
   }
 
   header {
@@ -26,7 +22,7 @@
 
     .bg-gradient {
       //background: $color-primary;
-      background: linear-gradient(265deg, rgba($color-primary, $bk-opacity) 0%, rgba($color-secondary, $bk-opacity) 100%);
+      background: linear-gradient(265deg, rgba($foreground-color, $bk-opacity) 0%, rgba($accent-color, $bk-opacity) 100%);
       background-size: 150% 150%;
 
       animation: AnimationName 10s ease infinite;

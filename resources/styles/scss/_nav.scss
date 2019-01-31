@@ -1,11 +1,14 @@
 nav {
+
+  background: url('../assets/worn-dots.png') $neutral-dark-color;
+
   .d-flex {
     @media only screen and (max-width : 992px) {
       flex-direction: row !important;
     }
   }
 
-  .nav-item, .navbar-toggler i, .head-link, a.dropdown-item {
-    @extend .text-dark;
+  .nav-item, .head-link {
+    @extend .text-light;
   }
 }

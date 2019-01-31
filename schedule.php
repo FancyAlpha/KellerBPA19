@@ -4,9 +4,7 @@
 <?php include 'resources/layout/head.php'?>
 
 <body>
-<header>
 <?php include 'resources/layout/nav.php'?>
-</header>
 
 <?php
     $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2, "Location" => 3);
@@ -52,7 +50,7 @@
         $html =
         "<div class='table-responsive' id='dy" . $currDay . "'>
             <table class='table table-hover mt-3'>
-                <thead class='thead-dark'>
+                <thead class='schedule-thead'>
                 <tr>
                     <th>Start Time</th>
                     <th>End Time</th>
@@ -84,9 +82,9 @@ $day1 = csvToArray($csvday1);
         echo("
         <div class='row justify-content-center'>
             <div class='col-auto btn-group'>                
-                <a class='btn " . ($currDay == 1 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy1\">Day One</a>                
-                <a class='btn " . ($currDay == 2 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy2\">Day Two</a>              
-                <a class='btn " . ($currDay == 3 ? 'btn-dark' : 'btn-outline-dark') . "' href=\"#dy3\">Day Three</a>            
+                <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Day One</a>                
+                <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Day Two</a>              
+                <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Day Three</a>            
             </div>
         </div>");
     }

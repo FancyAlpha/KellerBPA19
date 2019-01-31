@@ -1,5 +1,5 @@
 footer {
-  background: url('../assets/pinstriped-suit.png') black;
+  background: url('../assets/pinstriped-suit.png') $neutral-dark-color;
   .social-strip {
     a {
       @extend .col;

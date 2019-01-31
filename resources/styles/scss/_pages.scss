@@ -17,6 +17,16 @@
   background: url('../assets/worn-dots.png');
 }
 
+.dy-btn-fill {
+  background: $neutral-dark-color;
+  color: white;
+}
+
+.dy-btn-outline {
+  border-color: $neutral-dark-color;
+  color: $neutral-dark-color;
+}
+
 //
 //main.about {
 //  .card-deck {

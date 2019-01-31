@@ -5,9 +5,9 @@
 <?php include 'resources/layout/head.php' ?>
 
 <body>
-<header class="container">
-    <?php include 'resources/layout/nav.php' ?>
-</header>
+
+<?php include 'resources/layout/nav.php' ?>
+
 
 <main class="container pt-5 about">
 

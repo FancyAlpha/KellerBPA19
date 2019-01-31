@@ -9,15 +9,23 @@
     <div class="bg-gradient pb-5">
         <?php include 'resources/layout/nav.php' ?>
 
-        <div class="container text-center py-5" data-aos="fade-down"  data-aos-delay="400">
-            <h2>
-                Welcome to the</h2>
-            <h1 class="display-2">
-                National Leadership Conference</h1>
-            <h2>Washington D.C.</h2>
-            <h2>May 4-8 2020</h2>
+        <div class="container py-5" data-aos="fade-down" data-aos-delay="400">
+            <div class="row flex-wrap">
+                <div class="col col-12 col-sm-6">
+                    <h1 class="display-4 text-center text-sm-right">
+                        National Leadership Conference</h1>
+                </div>
 
-            <a href="planner.php" class="btn btn-light btn-lg mt-4 shadow-md">Get Started</a>
+                <div class="w-0 border-right border-1 border-light m-3 d-none d-sm-block"></div>
+
+                <div class="col d-md-flex align-items-center">
+                    <h2 class="text-center text-sm-left">Washington D.C.<br>May 4-8 2020</h2>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="planner.php" class="btn btn-light btn-lg mt-4 shadow-md">View Locations</a>
+            </div>
         </div>
     </div>
 </header>
@@ -25,7 +33,7 @@
 
 <main class="container pt-5">
 
-    <div class="row p-4" data-aos="fade-up">
+    <div class="row p-4">
         <div class="col col-md-8 mx-auto text-dark">
             <h2 class="text-center">Together, We Create</h2>
             <p>
