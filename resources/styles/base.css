@@ -6825,7 +6825,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 nav {
-  background: url("../assets/worn-dots.png") #121420; }
+  background: url("../assets/starring-transparent.png") #121420; }
   @media only screen and (max-width: 992px) {
     nav .d-flex {
       flex-direction: row !important; } }
@@ -6869,6 +6869,13 @@ footer {
 .dy-btn-outline {
   border-color: #121420;
   color: #121420; }
+  .dy-btn-outline:hover {
+    background: #121420;
+    color: white; }
+
+.schedule-thead {
+  background: #121420;
+  color: white; }
 
 .index nav {
   background: none; }

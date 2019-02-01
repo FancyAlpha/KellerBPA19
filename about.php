@@ -9,7 +9,16 @@
 <?php include 'resources/layout/nav.php' ?>
 
 
-<main class="container pt-5 about">
+<main class="container py-5 about">
+
+    <nav class="bg-transparent" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+    </nav>
+
+    <h2 class="display-4 pb-3 text-center">Team Goals</h2>
 
     <div class="row justify-content-center">
         <!--
@@ -37,23 +46,11 @@
 <!--            <li class="list-group-item"></li>-->
         </ul>
     </div>
-
-    <div class="row">
-
-        <div class="col-12 col-md-6">.</div>
-
-        <div class="col">
-            <a class="twitter-timeline"
-               data-height="600"
-               data-chrome="noheader nofooter transparent"
-               href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw"></a>
-        </div>
-    </div>
 </main>
 
 <section class="team-members">
     <div class="container py-5">
-        <h3 class="display-4 text-center pb-3">Meet the team</h3>
+        <h2 class="display-4 text-center pb-3">Meet the team</h2>
         <div class="row card-deck m-4 m-sm-0">
 
             <div class="card">
@@ -88,6 +85,23 @@
 
 
         </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="row">
+        <div class="col-12 col-md-6">.</div>
+
+        <div class="col">
+            <a class="twitter-timeline"
+               data-height="400"
+               data-chrome="noheader nofooter transparent"
+               href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
+                Tweets by National_BPA
+            </a>
+        </div>
+        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </section>
 

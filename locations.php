@@ -8,7 +8,14 @@
 
 <main class="container py-5">
 
-    <h3 class="display-4 pb-3">Hotels and Event Center Info</h3>
+    <nav class="bg-transparent" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Locations</li>
+        </ol>
+    </nav>
+
+    <h2 class="display-4 pb-3">Hotels and Event Center Info</h2>
 
     <div class="google-maps">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rdUS9stagHpYo9nAuSTcn7uKEsDOTyLY" width="600" height="450" frameborder="0"></iframe>

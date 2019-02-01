@@ -7,9 +7,16 @@
 <body>
 <?php include 'resources/layout/nav.php' ?>
 
-<main class="container">
+<main class="container py-5">
 
-    <h3 class="display-4 pt-5 pb-3 text-center">Dress Code</h3>
+    <nav class="bg-transparent" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Event and Competition Info</li>
+        </ol>
+    </nav>
+
+    <h2 class="display-4 pb-3 text-center">Dress Code</h2>
 
     <h2>Professional Dress</h2>
     <p>Second General Session and Awards Sessions, all Competitive Events (judged, non-judged, and open), Campaign Rally, Caucuses, Workshops, National Leadership Academy.</p>

@@ -12,19 +12,19 @@
         <div class="container py-5" data-aos="fade-down" data-aos-delay="400">
             <div class="row flex-wrap">
                 <div class="col col-12 col-sm-6">
-                    <h1 class="display-4 text-center text-sm-right">
+                    <h1 class="display-3 text-center text-sm-right">
                         National Leadership Conference</h1>
                 </div>
 
                 <div class="w-0 border-right border-1 border-light m-3 d-none d-sm-block"></div>
 
                 <div class="col d-md-flex align-items-center">
-                    <h2 class="text-center text-sm-left">Washington D.C.<br>May 4-8 2020</h2>
+                    <h2 class="text-center text-sm-left">Washington D.C.<br>May 4-7 2020</h2>
                 </div>
             </div>
 
             <div class="text-center">
-                <a href="planner.php" class="btn btn-light btn-lg mt-4 shadow-md">View Locations</a>
+                <a href="locations.php" class="btn btn-light btn-lg mt-4 shadow-md">View Locations</a>
             </div>
         </div>
     </div>
@@ -50,20 +50,6 @@
                 <a href="schedule.php" class="btn btn-outline-dark">View the schedule</a>
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6">.</div>
-
-        <div class="col d-none">
-            <a class="twitter-timeline"
-               data-height="400"
-               data-chrome="noheader nofooter transparent"
-               href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
-                Tweets by National_BPA
-            </a>
-        </div>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </main>
 

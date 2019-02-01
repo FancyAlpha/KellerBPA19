@@ -1,3 +1,8 @@
+
+main, section {
+
+}
+
 .google-maps {
   position: relative;
   padding-bottom: 75%; // This is the aspect ratio
@@ -25,6 +30,16 @@
 .dy-btn-outline {
   border-color: $neutral-dark-color;
   color: $neutral-dark-color;
+
+  &:hover {
+    background: $neutral-dark-color;
+    color: white;
+  }
+}
+
+.schedule-thead {
+  background: $neutral-dark-color;
+  color: white;
 }
 
 //

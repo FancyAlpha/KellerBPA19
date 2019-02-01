@@ -48,7 +48,7 @@
     function dayToHTML($day, $arrayindexes, $currDay)
     {
         $html =
-        "<div class='table-responsive' id='dy" . $currDay . "'>
+        "<div class='table-responsive mb-5' id='dy" . $currDay . "'>
             <table class='table table-hover mt-3'>
                 <thead class='schedule-thead'>
                 <tr>
@@ -82,14 +82,24 @@ $day1 = csvToArray($csvday1);
         echo("
         <div class='row justify-content-center'>
             <div class='col-auto btn-group'>                
-                <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Day One</a>                
-                <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Day Two</a>              
-                <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Day Three</a>            
+                <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Wednesday <b>5/4</b></a>                
+                <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Thursday <b>5/5</b></a>              
+                <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Friday <b>5/6</b></a>            
+                <a class='btn " . ($currDay == 4 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Saturday <b>5/7</b></a>            
             </div>
         </div>");
     }
     ?>
-<main class="container my-5">
+<main class="container py-5">
+
+    <nav class="bg-transparent" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-dark" href="index.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+        </ol>
+    </nav>
+
+    <h2 class="display-4 pb-3 text-center">Schedule</h2>
 
     <?php printSelector(1); ?>
     <?php echo dayToHTML($day1, $arrayindexes, 1); ?>

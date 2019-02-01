@@ -23,7 +23,7 @@
 
             <div class="row col-auto col-lg-4 pt-5 footer-links">
                 <div class="col">
-                    <a href="planner.php">Locations</a><br>
+                    <a href="locations.php">Locations</a><br>
                     <a href="schedule.php">Schedule</a><br>
 <!--                    <a href="#">Event List</a><br>-->
                     <a href="about.php">About Us</a><br>
