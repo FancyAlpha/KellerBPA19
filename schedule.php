@@ -7,7 +7,7 @@
 <?php include 'resources/layout/nav.php'?>
 
 <?php
-    $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2, "Location" => 3);
+    $arrayindexes = array("Event" => 0, "Start Time" => 1, "End Time" => 2, "Location" => 3, "Type" => 4);
 
     function fileToString($filename)
     {
@@ -42,7 +42,7 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td></tr>";
+        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td></tr>" . $event[$arrayindexes["Type"]] . "</td><td>";
     }
 
     function dayToHTML($day, $arrayindexes, $currDay)
@@ -56,6 +56,7 @@
                     <th>End Time</th>
                     <th>Event</th>
                     <th>Location</th>
+                    <th>Type</th>
                 </tr>
             </thead>
         <tbody>";
@@ -73,19 +74,24 @@
 $csvday1 = "resources/data/1.csv";
 $csvday2 = "resources/data/2.csv";
 $csvday3 = "resources/data/3.csv";
+$csvday2 = "resources/data/4.csv";
+$csvday3 = "resources/data/5.csv";
 
 $day1 = csvToArray($csvday1);
     $day2 = csvToArray($csvday2);
     $day3 = csvToArray($csvday3);
+     $day4 = csvToArray($csvday4);
+    $day5 = csvToArray($csvday5);
 
     function printSelector($currDay) {
         echo("
         <div class='row justify-content-center'>
-            <div class='col-auto btn-group'>                
-                <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Wednesday <b>5/4</b></a>                
-                <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Thursday <b>5/5</b></a>              
-                <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Friday <b>5/6</b></a>            
-                <a class='btn " . ($currDay == 4 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Saturday <b>5/7</b></a>            
+            <div class='col-auto btn-group'>  
+                <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Tuesday <b>5/3</b></a>
+                <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Wednesday <b>5/4</b></a>                
+                <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Thursday <b>5/5</b></a>              
+                <a class='btn " . ($currDay == 4 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy4\">Friday <b>5/6</b></a>            
+                <a class='btn " . ($currDay == 5 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy5\">Saturday <b>5/7</b></a>            
             </div>
         </div>");
     }
@@ -109,6 +115,12 @@ $day1 = csvToArray($csvday1);
 
     <?php printSelector(3); ?>
     <?php echo dayToHTML($day3, $arrayindexes, 3); ?>
+    
+    <?php printSelector(4); ?>
+    <?php echo dayToHTML($day4, $arrayindexes, 4); ?>
+
+    <?php printSelector(5); ?>
+    <?php echo dayToHTML($day5, $arrayindexes, 5); ?>
 </main>
 <?php include'resources/layout/scripts.php'?>
 <?php include'resources/layout/footer.php'?>
