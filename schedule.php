@@ -74,8 +74,8 @@
 $csvday1 = "resources/data/1.csv";
 $csvday2 = "resources/data/2.csv";
 $csvday3 = "resources/data/3.csv";
-$csvday2 = "resources/data/4.csv";
-$csvday3 = "resources/data/5.csv";
+$csvday4 = "resources/data/4.csv";
+$csvday5 = "resources/data/5.csv";
 
 $day1 = csvToArray($csvday1);
     $day2 = csvToArray($csvday2);
