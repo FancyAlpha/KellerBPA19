@@ -42,7 +42,7 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td></tr>" . $event[$arrayindexes["Type"]] . "</td><td>";
+        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td><td>" . $event[$arrayindexes["Type"]] . "</td></tr>";
     }
 
     function dayToHTML($day, $arrayindexes, $currDay)
