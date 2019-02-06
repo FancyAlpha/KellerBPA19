@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <?php include 'resources/config.php'?>
 <?php include 'resources/layout/head.php'?>
 
@@ -42,7 +42,24 @@
 
     function eventToHTML($event, $arrayindexes)
     {
-        return "<tr>" . "<td>" . $event[$arrayindexes["Start Time"]] . "</td><td>" . $event[$arrayindexes["End Time"]] . "</td><td>" . $event[$arrayindexes["Event"]] . "</td><td>" . $event[$arrayindexes["Location"]] . "</td><td>" . $event[$arrayindexes["Type"]] . "</td></tr>";
+        return "<tr>" .
+            "<td>" . $event[$arrayindexes["Start Time"]] . "</td>" .
+            "<td>" . $event[$arrayindexes["End Time"]] . "</td>" .
+            "<td>" . $event[$arrayindexes["Event"]] . "&nbsp;&nbsp;" . generateBadge($event[$arrayindexes["Type"]]) . "</td>" .
+            "<td>" . $event[$arrayindexes["Location"]] . "</td>" .
+//            "<td>" . $event[$arrayindexes["Type"]] . "</td>" .
+        "</tr>";
+    }
+
+    function generateBadge($event) {
+        $color = "badge-info";
+        if($event == "Event") {
+            $color = "badge-primary";
+        } else if ($event == "Contest") {
+            $color = "badge-success";
+        }
+
+        return "<span class=\"badge " . $color . "\">" . $event . "</span>";
     }
 
     function dayToHTML($day, $arrayindexes, $currDay)
@@ -52,11 +69,11 @@
             <table class='table table-hover mt-3'>
                 <thead class='schedule-thead'>
                 <tr>
-                    <th>Start Time</th>
-                    <th>End Time</th>
-                    <th>Event</th>
-                    <th>Location</th>
-                    <th>Type</th>
+                    <th style='width: 10%;'>Start Time</th>
+                    <th style='width: 10%;'>End Time</th>
+                    <th style='width: 50%;'>Event</th>
+                    <th style='width: 40%;'>Location</th>
+                    <!--<th>Event</th>-->
                 </tr>
             </thead>
         <tbody>";
@@ -86,14 +103,15 @@ $day1 = csvToArray($csvday1);
     function printSelector($currDay) {
         echo("
         <div class='row justify-content-center'>
-            <div class='col-auto btn-group'>  
+            <div class='btn-group justify-content-center flex-wrap' role='day buttons' aria-label='selector for days'>  
                 <a class='btn " . ($currDay == 1 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy1\">Tuesday <b>5/3</b></a>
                 <a class='btn " . ($currDay == 2 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy2\">Wednesday <b>5/4</b></a>                
                 <a class='btn " . ($currDay == 3 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy3\">Thursday <b>5/5</b></a>              
                 <a class='btn " . ($currDay == 4 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy4\">Friday <b>5/6</b></a>            
                 <a class='btn " . ($currDay == 5 ? 'dy-btn-fill' : 'dy-btn-outline') . "' href=\"#dy5\">Saturday <b>5/7</b></a>            
             </div>
-        </div>");
+        </div>
+        ");
     }
     ?>
 <main class="container py-5">
