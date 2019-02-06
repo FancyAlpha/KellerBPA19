@@ -25,7 +25,7 @@
                 <div class="col">
                     <a href="locations.php">Locations</a><br>
                     <a href="schedule.php">Schedule</a><br>
-<!--                    <a href="#">Event List</a><br>-->
+                    <a href="attractions.php">Tours</a><br>
                     <a href="about.php">About Us</a><br>
                 </div>
 

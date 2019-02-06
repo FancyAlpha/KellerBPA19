@@ -88,20 +88,23 @@
     </div>
 </section>
 
-<section>
+<section class="jumbotron jumbotron-fluid mb-0 bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 my-auto">
+                <h4 class="display-4 text-white pb-3">Check out BPA's Twitter for more updates!</h4>
+            </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6">.</div>
-
-        <div class="col">
-            <a class="twitter-timeline"
-               data-height="400"
-               data-chrome="noheader nofooter transparent"
-               href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
-                Tweets by National_BPA
-            </a>
+            <div class="col">
+                <a class="twitter-timeline"
+                   data-height="600"
+                   data-chrome="noheader nofooter"
+                   href="https://twitter.com/National_BPA?ref_src=twsrc%5Etfw">
+                    Tweets by National_BPA
+                </a>
+            </div>
+            <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-        <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </section>
 
