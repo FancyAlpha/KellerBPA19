@@ -34,7 +34,7 @@
 
         for($i = 1; $i < count($filepieces); $i++)
         {
-            $filecsv[$i - 1] =  explode(",", $filepieces[$i]);
+            $filecsv[$i - 1] =  explode("\t", $filepieces[$i]);
         }
 
         return $filecsv;
@@ -71,11 +71,11 @@
         return $html;
     }
 
-$csvday1 = "resources/data/1.csv";
-$csvday2 = "resources/data/2.csv";
-$csvday3 = "resources/data/3.csv";
-$csvday4 = "resources/data/4.csv";
-$csvday5 = "resources/data/5.csv";
+$csvday1 = "resources/data/1.tsv";
+$csvday2 = "resources/data/2.tsv";
+$csvday3 = "resources/data/3.tsv";
+$csvday4 = "resources/data/4.tsv";
+$csvday5 = "resources/data/5.tsv";
 
 $day1 = csvToArray($csvday1);
     $day2 = csvToArray($csvday2);
