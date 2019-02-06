@@ -15,7 +15,7 @@
         </ol>
     </nav>
 
-    <h2 class="display-4 pb-3">Hotels and Event Center Info</h2>
+    <h2 class="display-4 pb-3">Hotels Info</h2>
 
     <div class="card-deck pt-3">
             <div class="card mb-3">
@@ -137,6 +137,7 @@
         </div>
     </div>
 
+    <!-- Places of interest -->
     <div class="card-deck pt-3">
         <div class="card mb-3">
             <div class="card-header bg-success text-light"><i class="fas fa-map-marked"></i> Place of Interest</div>
@@ -156,6 +157,9 @@
                     Any pointed objects,
                     Aerosol containers,
                     Guns, ammunition, fireworks, electric stun guns, mace, martial arts weapons/devices, or knives of any size</p>
+
+                <a href="https://www.whitehouse.gov/about-the-white-house/tours-events/" class="btn btn-success card-link">More Info</a>
+                <a href="https://www.whitehouse.gov/" class="card-link">Visit Website</a>
             </div>
         </div>
 
@@ -175,6 +179,8 @@
                 </h6>
 
                 <p class="card-text text-secondary">Security Information - All purses are subject to search, no weapons, proper ID must be presented, no photography.</p>
+
+                <a href="https://pentagontours.osd.mil/Tours/" class="btn btn-success">More Info</a>
             </div>
         </div>
 
@@ -193,6 +199,9 @@
                 </h6>
 
                 <p class="card-text text-secondary">Security Information - All purses are subject to search, no weapons, proper ID must be presented, no photography </p>
+
+                <a href="https://www.fbi.gov/contact-us/fbi-headquarters/the-fbi-experience" class="btn btn-success card-link">More Info</a>
+                <a href="https://www.fbi.gov/" class="card-link">Visit Website</a>
             </div>
         </div>
     </div>
